@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "./logo.svg";
+import CounterContainer from "./containers/CounterContainer.js"
 import "./App.css";
 
 function App() {
@@ -11,6 +12,9 @@ function App() {
       </div>
       <p className="App-intro">
         To get started, edit <code>src/App.js</code> and save to reload.
+      </p>
+      <p>
+        <CounterContainer />
       </p>
     </div>
   );
