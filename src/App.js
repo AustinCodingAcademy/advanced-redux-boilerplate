@@ -11,8 +11,10 @@ function App() {
         <h2>Welcome to React</h2>
       </div>
       <p className="App-intro">
-        <CounterContainer />
       </p>
+      <div>
+        <CounterContainer />
+      </div>  
     </div>
   );
 }

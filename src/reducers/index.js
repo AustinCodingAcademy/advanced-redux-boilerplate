@@ -11,6 +11,7 @@ function counter(state = 0, action) {
     case DECREASE_COUNTER:
     return state - 1;
   }
+  return state;
 }
 
 export default combineReducers({
