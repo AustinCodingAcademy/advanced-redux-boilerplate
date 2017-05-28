@@ -3,14 +3,19 @@ import PropTypes from "prop-types";
 
 function Counter(props) {
   return (
-    <span>
-      Current Value: {props.value}
-    </span>
+    <div>
+      <button onClick={props.onIncrease} >Increase+</button>
+      <h3>Current Value: {props.value}</h3>
+      <button onClick={props.onDecrese} >Decrease-</button>
+    </div>
   );
 }
 
 Counter.propTypes = {
-  value: PropTypes.number.isRequired
+  value: PropTypes.number.isRequired,
+  onIncrease: PropTypes.func.isRequired,
+  onDecrese: PropTypes.func.isRequired
+
 };
 
 export default Counter;
