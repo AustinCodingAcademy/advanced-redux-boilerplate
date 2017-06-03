@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
+import CounterContainer from "./containers/CounterContainer";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <h2>Welcome to React</h2>
       </div>
+      <CounterContainer />
       <p className="App-intro">
         To get started, edit <code>src/App.js</code> and save to reload.
       </p>
